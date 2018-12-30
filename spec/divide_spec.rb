@@ -1,4 +1,4 @@
-def divide; end
+require './divide'
 
 describe 'divide' do
   it 'passes' do
