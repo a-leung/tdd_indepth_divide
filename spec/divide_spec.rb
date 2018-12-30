@@ -6,6 +6,6 @@ describe 'divide' do
   end
 
   it 'has divide function defined' do
-    expect { divide }.to_not raise_error NameError
+    expect { divide }.to_not raise_error
   end
 end
