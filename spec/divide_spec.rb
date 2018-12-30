@@ -1,3 +1,5 @@
+def divide; end
+
 describe 'divide' do
   it 'passes' do
     expect(true).to eq(true)
