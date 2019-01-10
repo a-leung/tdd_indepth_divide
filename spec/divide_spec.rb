@@ -22,8 +22,7 @@ describe 'divides' do
     expect(divide(1,1)).to eq(1)
     expect(divide(2,1)).to eq(2)
 
-    (1..1_000_000).each do |numerator|
-      expect(divide(numerator, 1)).to eq(numerator)
-    end
+    numerator = rand(1..1_000_000)
+    expect(divide(numerator, 1)).to eq(numerator)
   end
 end
