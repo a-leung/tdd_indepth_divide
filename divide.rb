@@ -1,3 +1,3 @@
 def divide (numerator, denominator)
-  1
+  numerator
 end
