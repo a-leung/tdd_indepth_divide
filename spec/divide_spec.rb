@@ -16,3 +16,9 @@ describe 'arguments' do
     expect { divide(1,1) }.to_not raise_error ArgumentError
   end
 end
+
+describe 'divides' do
+  it 'by 1 properly' do
+    expect(divide(1,1)).to eq(1)
+  end
+end
