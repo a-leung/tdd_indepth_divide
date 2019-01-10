@@ -20,5 +20,6 @@ end
 describe 'divides' do
   it 'by 1 properly' do
     expect(divide(1,1)).to eq(1)
+    expect(divide(2,1)).to eq(2)
   end
 end
