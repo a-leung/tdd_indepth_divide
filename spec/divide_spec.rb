@@ -1,4 +1,5 @@
 require './divide'
+RSpec::Expectations.configuration.on_potential_false_positives = :nothing
 
 describe 'divide' do
   it 'passes' do
@@ -6,12 +7,12 @@ describe 'divide' do
   end
 
   it 'has divide function defined' do
-    expect { divide }.to_not raise_error
+    expect { divide }.to_not raise_error NameError
   end
 end
 
 describe 'arguments' do
   it 'accepts two arguments - numerator & denominator' do
-    expect { divide(1,1) }.to_not raise_error
+    expect { divide(1,1) }.to_not raise_error ArgumentError
   end
 end
