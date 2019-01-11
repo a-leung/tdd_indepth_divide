@@ -46,5 +46,6 @@ describe 'bad arguments' do
   it 'strings' do
     expect { divide("1", "1") }.to raise_error ArgumentError
     expect { divide(1, "1") }.to raise_error ArgumentError
+    expect { divide("1", 1) }.to raise_error ArgumentError
   end
 end
