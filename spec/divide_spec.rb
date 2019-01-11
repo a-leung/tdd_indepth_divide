@@ -49,3 +49,9 @@ describe 'bad arguments' do
     expect { divide("1", 1) }.to raise_error ArgumentError
   end
 end
+
+describe 'zeroes' do
+  it '...' do
+    # expect(divide(1,0)).to ...
+  end
+end
