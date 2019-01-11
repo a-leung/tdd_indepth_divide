@@ -1,7 +1,9 @@
 def divide (numerator, denominator)
-  if denominator < 2
-    numerator
-  else
-    0
+  counter = 0
+  while numerator - denominator >= 0
+    numerator -= denominator
+    counter += 1
   end
+
+  counter
 end
