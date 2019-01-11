@@ -55,3 +55,9 @@ describe 'zeroes' do
     # expect(divide(1,0)).to ...
   end
 end
+
+describe 'negative numbers' do
+  it '...' do
+    # expect(divide(1,-1)).to ...
+  end
+end
