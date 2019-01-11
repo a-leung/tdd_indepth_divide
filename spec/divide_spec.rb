@@ -29,5 +29,8 @@ describe 'divides' do
   it 'by 2 properly' do
     expect(divide(1,2)).to eq(0)
     expect(divide(2,2)).to eq(1)
+
+    numerator = rand(1..1_000_000)
+    expect(divide(numerator, 2)).to eq(numerator/2)
   end
 end
