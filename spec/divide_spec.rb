@@ -33,4 +33,11 @@ describe 'divides' do
     numerator = rand(1..1_000_000)
     expect(divide(numerator, 2)).to eq(numerator/2)
   end
+
+  it 'any integers properly' do
+    expect(divide(2,3)).to eq(0)
+    expect(divide(10,10)).to eq(1)
+    expect(divide(14,7)).to eq(2)
+    expect(divide(300, 100)).to eq(3)
+  end
 end
