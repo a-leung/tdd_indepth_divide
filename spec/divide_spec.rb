@@ -41,3 +41,9 @@ describe 'divides' do
     expect(divide(300, 100)).to eq(3)
   end
 end
+
+describe 'bad arguments' do
+  it 'strings' do
+    expect { divide("1", "1") }.to eq("1")
+  end
+end
